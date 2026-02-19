@@ -190,4 +190,42 @@ while True:
     
     print(f'the list now: {value}')
     print(f'the list in order: {sorted(value)}')
+
+
+#sat- studdes
+print('')
+string = input("please type in a string: ")
+for i in string:
+    print(i)
+    print("*")
+
+#from negative to positive
+print("")
+N = int(input("please type in a positive integer: "))
+for i in range(-N, N, +1):
+    if i != 0 :
+        print(i)
+
+
+#list of stars
+print("")
+def list_of_stars(numbers):
+    for i in numbers:
+        print("*" * i)
+
+
     
+list_of_stars([3, 7, 1, 1, 2])
+
+#anagrams
+print("")
+
+def anagrams(me, you):
+    return sorted(me) == sorted(you)
+
+
+print(anagrams("tame", "meta"))
+print(anagrams("tame", "mate"))
+print(anagrams("tame", "team"))
+print(anagrams("tabby", "batty"))
+print(anagrams("python", "java"))
